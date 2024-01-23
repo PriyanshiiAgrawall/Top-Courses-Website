@@ -26,15 +26,22 @@ function App() {
   //   fetchedData()
   // }, [])
   return (
-    <div>
-      <NavBar></NavBar>
-      <Filter filterData={filterData}></Filter>
-      <Cards courses={apiData}></Cards>
+    <div className="min-h-screen">
+      <div>
+        <NavBar />
+      </div>
+      <div className="bg-bgDark2">
+        <div>
+          <Filter filterData={filterData} />
+        </div>
+        <div className="w-11/12 max-w-[1200px] min-h-[50vh] mx-auto flex flex-wrap justify-center items-center">
+          <Cards courses={apiData} />
+        </div>
+
+      </div>
 
 
-
-
-    </div>
+    </div >
   );
 }
 

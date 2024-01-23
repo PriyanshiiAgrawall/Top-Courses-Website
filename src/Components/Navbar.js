@@ -2,8 +2,8 @@ import React from "react";
 
 function NavBar() {
     return (
-        <div>
-            <h2>Top Courses</h2>
+        <div> <nav className="bg-bgDark py-4">
+            <h2>Top Courses</h2></nav>
         </div>
     )
 }
